@@ -6,9 +6,15 @@ export default class SkyHighBuilding extends Building {
     this._floors = floors;
   }
 
-  // Getters for each attribute
+  // Getters and Setters
   get floors() {
     return this._floors;
+  }
+
+  set floors(newFloors) {
+    if (typeof newFloors === 'number') {
+      this._floors = newFloors;
+    }
   }
 
   // Override the evacuationWarningMessage method
