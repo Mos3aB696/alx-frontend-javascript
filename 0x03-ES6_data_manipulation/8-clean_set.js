@@ -1,7 +1,7 @@
 export default function cleanSet(set, startString) {
   if (!set || set.size === 0) return '';
   if (typeof set !== 'object' || !(set instanceof Set)) return '';
-  if (startString === '') return '';
+  if (startString === '' || typeof startString !== 'string') return '';
 
   let result = '';
   for (const item of set) {
