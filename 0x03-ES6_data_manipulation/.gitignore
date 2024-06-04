@@ -1,7 +1,8 @@
-node_modules/
 package.json
-package-lock.json
+babel.config.js
 .eslintrc.js
 babel.config.js
-eslint.config.mjs
+node_modules/
+package-lock.json
 *-main.js
+
